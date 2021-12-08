@@ -55,6 +55,7 @@
         <module>modules/camel-ext</module>
         <module>modules/jms11-ext</module>
         <module>modules/kafka-ext</module>
+        <module>modules/nacos-ext</module>
         <module>modules/spring-data-ext</module>
         <module>modules/spring-data-2.0-ext</module>
         <module>modules/spring-data-2.2-ext</module>
@@ -449,4 +450,15 @@
             </plugin>
         </plugins>
     </build>
+
+
+    <!-- omitted xml -->
+    <distributionManagement>
+        <repository>
+            <!--必须与 settings.xml 的 id 一致-->
+            <id>starringshop-starlove-maven</id>
+            <name>maven</name>
+            <url>https://starringshop-maven.pkg.coding.net/repository/starlove/maven/</url>
+        </repository>
+    </distributionManagement>
 </project>

@@ -209,8 +209,9 @@ public class IgniteRepositoryImpl<V, K extends Serializable> implements IgniteRe
         throw new UnsupportedOperationException("Use IgniteRepository.deleteAllById(keys) method instead.");
     }
 
-    /** {@inheritDoc} */
-    @Override public void deleteAllById(Iterable<K> ids) {
+    /** {@inheritDoc}
+     * @param ids*/
+    @Override public void deleteAllById(Iterable<? extends K> ids) {
         if (ids instanceof Set) {
             cache.removeAll((Set<K>)ids);
             return;

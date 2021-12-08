@@ -30,7 +30,7 @@
         <relativePath>../../parent</relativePath>
     </parent>
 
-    <artifactId>ignite-spring-data-2.2-ext</artifactId>
+    <artifactId>ignite-spring-data-2.5-ext</artifactId>
     <version>${ignite-spring-data-2.2-ext.version}</version>
     <url>http://ignite.apache.org</url>
 
@@ -58,21 +58,21 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${spring-5.2.version}</version>
+            <version>${spring-5.3.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>${spring-5.2.version}</version>
+            <version>${spring-5.3.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-commons</artifactId>
-            <version>${spring.data-2.2.version}</version>
+            <version>${spring.data-2.5.version}</version>
             <scope>provided</scope>
             <!-- Exclude slf4j logging in favor of log4j -->
             <exclusions>
@@ -196,4 +196,28 @@
             </dependencies>
         </profile>
     </profiles>
+
+
+
+    <repositories>
+        <repository>
+            <id>starringshop-starlove-maven</id>
+            <name>maven</name>
+            <url>https://starringshop-maven.pkg.coding.net/repository/starlove/maven/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!-- omitted xml -->
+    <distributionManagement>
+        <repository>
+            <!--必须与 settings.xml 的 id 一致-->
+            <id>starringshop-starlove-maven</id>
+            <name>maven</name>
+            <url>https://starringshop-maven.pkg.coding.net/repository/starlove/maven/</url>
+        </repository>
+    </distributionManagement>
 </project>

@@ -36,14 +36,14 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <ignite.version>2.12.0-SNAPSHOT</ignite.version>
+        <ignite.version>2.11.0</ignite.version>
 
-        <ignite-spring-cache-ext.version>1.1.0-SNAPSHOT</ignite-spring-cache-ext.version>
+        <ignite-spring-cache-ext.version>1.0.0</ignite-spring-cache-ext.version>
         <ignite-spring-data-2.0-ext.version>1.1.0-SNAPSHOT</ignite-spring-data-2.0-ext.version>
-        <ignite-spring-data-2.2-ext.version>1.1.0-SNAPSHOT</ignite-spring-data-2.2-ext.version>
-        <ignite-spring-data-commons.version>1.2.0-SNAPSHOT</ignite-spring-data-commons.version>
-        <ignite-spring-data-ext.version>1.1.0-SNAPSHOT</ignite-spring-data-ext.version>
-        <ignite-spring-tx-ext.version>1.1.0-SNAPSHOT</ignite-spring-tx-ext.version>
+        <ignite-spring-data-2.2-ext.version>1.0.0</ignite-spring-data-2.2-ext.version>
+        <ignite-spring-data-commons.version>1.1.0</ignite-spring-data-commons.version>
+        <ignite-spring-data-ext.version>1.0.0</ignite-spring-data-ext.version>
+        <ignite-spring-tx-ext.version>1.0.0</ignite-spring-tx-ext.version>
 
         <ignite.edition>apache-ignite</ignite.edition>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -137,7 +137,9 @@
         <spring.data-2.0.version>2.0.13.RELEASE</spring.data-2.0.version> <!-- don't forget to update spring-5.0 version -->
         <spring-5.0.version>5.0.16.RELEASE</spring-5.0.version><!-- don't forget to update spring-data-2.0 version -->
         <spring.data-2.2.version>2.2.3.RELEASE</spring.data-2.2.version> <!-- don't forget to update spring-5.2 version -->
+        <spring.data-2.5.version>2.5.6</spring.data-2.5.version> <!-- don't forget to update spring-5.2 version -->
         <spring-5.2.version>5.2.3.RELEASE</spring-5.2.version><!-- don't forget to update spring-data-2.2 version -->
+        <spring-5.3.version>5.3.12</spring-5.3.version><!-- don't forget to update spring-data-2.2 version -->
         <spring41.osgi.feature.version>4.1.7.RELEASE_1</spring41.osgi.feature.version>
         <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
         <storm.version>1.1.1</storm.version>
